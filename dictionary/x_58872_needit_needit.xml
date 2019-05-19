@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Needit" max_length="40" name="x_58872_needit_needit" sizeclass="13" type="collection">
+        <element choice="1" label="State New" max_length="40" name="u_integer_1" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="Open" sequence="0" value="3"/>
+                <element inactive_on_update="false" label="work progress" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="Closed" sequence="2" value="2"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
+        <element label="Requested for" max_length="32" name="u_reference_3" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element label="Requested by" max_length="32" name="u_reference_5" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Request Type" max_length="40" name="u_string_1" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Facilities" sequence="0" value="facilities"/>
+                <element inactive_on_update="false" label="Human Resources" sequence="1" value="human resources"/>
+                <element inactive_on_update="false" label="Legal" sequence="2" value="legal"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="What Needed" max_length="40" name="u_string_2" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Facilities" sequence="0" value="facilities"/>
+                <element inactive_on_update="false" label="Human Resources" sequence="1" value="human resources"/>
+                <element inactive_on_update="false" label="Legal" sequence="2" value="legal"/>
+                <element inactive_on_update="false" label="Other" sequence="3" value="other"/>
+            </choice>
+        </element>
+    </element>
+</database>
